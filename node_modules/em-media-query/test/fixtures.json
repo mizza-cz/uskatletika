@@ -1,0 +1,142 @@
+{
+	"min": {
+		"options": {},
+		"test": [
+			"screen and (min-width:600px)",
+			"screen and (min-width:42px)",
+			"screen and (min-width:128px)",
+			"screen and (min-height:600px)",
+			"screen and (min-height:42px)",
+			"screen and (min-height:128px)",
+			"screen and (min-width:100vh)",
+			"screen and (min-height:100%)"
+		],
+		"expect": [
+			"screen and (min-width:37.5em)",
+			"screen and (min-width:2.625em)",
+			"screen and (min-width:8em)",
+			"screen and (min-height:37.5em)",
+			"screen and (min-height:2.625em)",
+			"screen and (min-height:8em)",
+			"screen and (min-width:100vh)",
+			"screen and (min-height:100%)"
+		]
+	},
+	"max": {
+		"options": {},
+		"test": [
+			"screen and (max-width:600px)",
+			"screen and (max-width:42px)",
+			"screen and (max-width:128px)",
+			"screen and (max-height:600px)",
+			"screen and (max-height:42px)",
+			"screen and (max-height:128px)",
+			"screen and (max-width:100vh)",
+			"screen and (max-height:100%)"
+		],
+		"expect": [
+			"screen and (max-width:37.5em)",
+			"screen and (max-width:2.625em)",
+			"screen and (max-width:8em)",
+			"screen and (max-height:37.5em)",
+			"screen and (max-height:2.625em)",
+			"screen and (max-height:8em)",
+			"screen and (max-width:100vh)",
+			"screen and (max-height:100%)"
+		]
+	},
+	"min-combination": {
+		"options": {},
+		"test": [
+			"(min-width:600px), screen and (min-width:739px)",
+			"screen and (min-width:42px), (min-width:4177px)",
+			"(min-width:128px), screen and (min-width:637px)",
+			"(min-height:600px), screen and (min-height:739px)",
+			"screen and (min-height:42px), (min-height:4177px)",
+			"(min-height:128px), screen and (min-height:637px)",
+			"(min-width:100vh), screen and (min-width:100%)",
+			"(min-height:100vh), screen and (min-height:100%)"
+		],
+		"expect": [
+			"(min-width:37.5em), screen and (min-width:46.1875em)",
+			"screen and (min-width:2.625em), (min-width:261.0625em)",
+			"(min-width:8em), screen and (min-width:39.8125em)",
+			"(min-height:37.5em), screen and (min-height:46.1875em)",
+			"screen and (min-height:2.625em), (min-height:261.0625em)",
+			"(min-height:8em), screen and (min-height:39.8125em)",
+			"(min-width:100vh), screen and (min-width:100%)",
+			"(min-height:100vh), screen and (min-height:100%)"
+		]
+	},
+	"min-max": {
+		"options": {},
+		"test": [
+			"screen and (min-width:600px) and (max-width:739px)",
+			"screen and (min-width:42px) and (max-width:4177px)",
+			"screen and (min-width:128px) and (max-width:637px)",
+			"screen and (min-height:600px) and (max-height:739px)",
+			"screen and (min-height:42px) and (max-height:4177px)",
+			"screen and (min-height:128px) and (max-height:637px)",
+			"screen and (min-width:100vh) and (max-width:100%)",
+			"screen and (min-height:100vh) and (max-height:100%)"
+		],
+		"expect": [
+			"screen and (min-width:37.5em) and (max-width:46.1875em)",
+			"screen and (min-width:2.625em) and (max-width:261.0625em)",
+			"screen and (min-width:8em) and (max-width:39.8125em)",
+			"screen and (min-height:37.5em) and (max-height:46.1875em)",
+			"screen and (min-height:2.625em) and (max-height:261.0625em)",
+			"screen and (min-height:8em) and (max-height:39.8125em)",
+			"screen and (min-width:100vh) and (max-width:100%)",
+			"screen and (min-height:100vh) and (max-height:100%)"
+		]
+	},
+	"min-multiple": {
+		"options": {},
+		"test": [
+			"screen and (min-width:600px), screen and (min-width:739px)",
+			"screen and (min-width:42px), screen and (min-width:4177px)",
+			"screen and (min-width:128px), screen and (min-width:637px)",
+			"screen and (min-height:600px), screen and (min-height:739px)",
+			"screen and (min-height:42px), screen and (min-height:4177px)",
+			"screen and (min-height:128px), screen and (min-height:637px)",
+			"screen and (min-width:100vh), screen and (min-width:100%)",
+			"screen and (min-height:100vh), screen and (min-height:100%)"
+		],
+		"expect": [
+			"screen and (min-width:37.5em), screen and (min-width:46.1875em)",
+			"screen and (min-width:2.625em), screen and (min-width:261.0625em)",
+			"screen and (min-width:8em), screen and (min-width:39.8125em)",
+			"screen and (min-height:37.5em), screen and (min-height:46.1875em)",
+			"screen and (min-height:2.625em), screen and (min-height:261.0625em)",
+			"screen and (min-height:8em), screen and (min-height:39.8125em)",
+			"screen and (min-width:100vh), screen and (min-width:100%)",
+			"screen and (min-height:100vh), screen and (min-height:100%)"
+		]
+	},
+	"precision": {
+		"options": {
+			"precision": 3
+		},
+		"test": [
+			"screen and (min-width:600px) and (max-width:739px)",
+			"screen and (min-width:42px) and (max-width:4177px)",
+			"screen and (min-width:128px) and (max-width:637px)",
+			"screen and (min-height:600px) and (max-height:739px)",
+			"screen and (min-height:42px) and (max-height:4177px)",
+			"screen and (min-height:128px) and (max-height:637px)",
+			"screen and (min-width:100vh) and (max-width:100%)",
+			"screen and (min-height:100vh) and (max-height:100%)"
+		],
+		"expect": [
+			"screen and (min-width:37.5em) and (max-width:46.188em)",
+			"screen and (min-width:2.625em) and (max-width:261.063em)",
+			"screen and (min-width:8em) and (max-width:39.813em)",
+			"screen and (min-height:37.5em) and (max-height:46.188em)",
+			"screen and (min-height:2.625em) and (max-height:261.063em)",
+			"screen and (min-height:8em) and (max-height:39.813em)",
+			"screen and (min-width:100vh) and (max-width:100%)",
+			"screen and (min-height:100vh) and (max-height:100%)"
+		]
+	}
+}
