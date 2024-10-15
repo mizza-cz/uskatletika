@@ -19,7 +19,7 @@ body {
     background-size: contain;
     background-color: #E66414;
 }
-
+ 
 .menu {
     position: relative;
 }
@@ -108,7 +108,12 @@ a.nav-link {
     vertical-align: middle;
     line-height: 42px;
 }
-
+.homepage .clanky{
+    background: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 6px;
+}
 .container-archiv {
     margin-top: 5%;
     max-width: 80%;
@@ -136,10 +141,17 @@ a.nav-link {
     object-position: top;
 }
 
+.topstory-article a{
+    display: block;
+    height: 100%;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
 .topstory-article img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    
     margin-bottom: 12px;
 }
 
@@ -152,6 +164,7 @@ a.nav-link {
     font-size: 14px;
     color: #000;
     font-weight: 700;
+    padding: 0 16px;
 }
 
 .topstory-article h2 {
@@ -160,6 +173,7 @@ a.nav-link {
     line-height: 1.33;
     font-weight: 500;
     margin-top: 3%;
+    padding: 0 16px 12px;
 }
 
 a:hover {
@@ -357,10 +371,17 @@ a:hover {
 .socials {
     margin-top: 18px;
     max-width: 80%;
+    border-radius: 6px;
+    overflow: hidden;
+    @media screen and (max-width: 991px){
+        max-width: 100%;
+    }
 }
 
 .col-md-3.Facebook {
     margin-bottom: 20px;
+    background: #fff;
+    padding-top: 16px;
 }
 
 .twitter span {
@@ -456,7 +477,11 @@ footer a{
     padding-right: 15px;
     padding-left: 15px;
 }
-
+.kategorie{
+    background: #fff;
+    padding-top: 24px;
+    margin-bottom: 24px;
+}
 .kategorie .info {
     margin-bottom: 30px;
 }
@@ -1300,7 +1325,15 @@ td {
 #box2 {
     margin-top: 5px;
 }
-
+.right-panel,
+.main{
+    background: #fff;
+}
+.static-section .topstory{
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+}
 @media screen and (max-width: 1175px) {
     .main {
         -ms-flex: 0 0 100%;
