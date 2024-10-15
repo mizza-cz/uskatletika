@@ -481,6 +481,7 @@ footer a{
     background: #fff;
     padding-top: 24px;
     margin-bottom: 24px;
+    border-radius: 6px;
 }
 .kategorie .info {
     margin-bottom: 30px;
@@ -1333,6 +1334,7 @@ td {
     border-radius: 6px;
     overflow: hidden;
     background: #fff;
+    padding-top: 24px;
 }
 @media screen and (max-width: 1175px) {
     .main {
