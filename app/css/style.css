@@ -117,6 +117,11 @@ a.nav-link {
 .container-archiv {
     margin-top: 5%;
     max-width: 80%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.container-archiv .main{
+    padding-bottom: 24px;
 }
 
 .btn-clenska-sekce img {
@@ -909,6 +914,7 @@ footer a{
     margin: 0px;
     position: relative;
     z-index: 10;
+    background: #fff;
     margin-left: -1px;
 }
 
@@ -980,7 +986,11 @@ footer a{
 .cal-wrap button.slick-arrow {
     width: 45px;
     background-color: #116293;
+   
     border: 1px solid #116293;
+}
+.slick-arrow{
+    outline: none !important;
 }
 
 .cal-wrap .slick-prev {
