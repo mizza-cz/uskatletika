@@ -133,17 +133,19 @@ a.nav-link {
 
 .topstory-main {
     padding: 0px 7px;
-    aspect-ratio:1380/480;
+    aspect-ratio:1380/740;
+    margin-bottom: 35px;
 }
 
 .topstory-main img {
     width: 100%;
     height: auto;
     border-radius: 6px;
-    margin-bottom: 35px;
+   
     height: 100%;
     object-fit: cover;
     object-position: top;
+    display: block;
 }
 
 .topstory-article a{
@@ -159,7 +161,7 @@ a.nav-link {
     
     margin-bottom: 12px;
 }
-
+ 
 .topstory-article {
     padding-right: 7px;
     padding-left: 7px;
@@ -338,20 +340,21 @@ a:hover {
 }
 
 .partneri {
-    margin-top: 20px;
-    max-height: 100px !important;
+    padding: 24px 0;
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: dashed 1px #dee6eb;
-    padding-bottom: 10px;
+    margin: 0 auto;
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: -webkit-flex;     /* NEW - Chrome */
+   
 }
-
+@media screen and (max-width: 1200px){
+.partneri{
+    padding-top: 0;
+}
+}
 .slick-slide img {
     display: inline !important;
 }
@@ -1780,6 +1783,13 @@ img {
 
 .dalsi-clanky .row {
     margin-bottom: 10px;
+}
+.dalsi-clanky{
+    padding: 0 12px;
+}
+.dalsi-clanky .btn-clenska-sekce{
+    margin-left: auto;
+    margin-right: auto;
 }
 iframe{max-width: 100% !important;}
 
