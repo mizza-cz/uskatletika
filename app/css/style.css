@@ -1410,7 +1410,6 @@ td {
         margin-top: 25%;
     }
 }
-
 .partner-velky {
     width: 100%;
     height: 240px;
@@ -1771,16 +1770,13 @@ img {
   aspect-ratio: 128 / 50;
   text-align: center;
 }
-
 .team h1 {
     font-size: 100px;
     font-weight: 700;
 }
-
 .marg {
   margin-top:30px;
 }
-
 .dalsi-clanky .row {
     margin-bottom: 10px;
 }
@@ -1794,12 +1790,10 @@ img {
 iframe{max-width: 100% !important;}
 
 .article-text table{
-    /*display: block;*/
     width: 100%;
     overflow-x: auto;
     margin-top: 10px;
 }
-
 .article-text table td:nth-child(1) { width: 80%; }
 .article-text table tr:nth-child(1) { background-color: lightblue; border: none; }
 .article-text table tr { border-bottom: rgba(227, 227, 227, 0.585) solid 1px; }
