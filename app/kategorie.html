@@ -231,63 +231,66 @@ img.style.height = "250px";
 <script src='https://consent.esports.cz/main.js?v=2'></script>
 <script type='text/plain' data-cookiecategory='social' src='https://consent.esports.cz/social-media2.js?v=2'></script>
 
-      <footer>
-          <div class="container line">
-              <div class="row">
-                  <h2 class="footer-left">© 2024 Všechna práva vyhrazena, USK Praha - atletika, <a href="https://esportsmedia.cz/" target="_blank">eSportsmedia.cz</a></h2><h2 class="footer-right"><a href="zobraz.asp?t=informace-o-autorskych-pravech">Informace o autorských právech</a></h2>
-              </div>
-          </div>
-          <script type="text/javascript" src="js/jquery.min.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-          <script src="js/slick.min.js"></script>
-          <script src="js/lightgallery-all.min.js"></script>
-          
-          <script>
-            $(document).ready(function(){
-              var n = !1;
-              $("a[data-gallery]").click(function() {
-              if (!n) {
-                  n = !0;
-                  var e = $(this).data("gallery"),
-                      t = "inc/gallery_ajax.asp?mode=" + e;
-                  return 1 != e && 2 != e || (t += "&id=" + $(this).data("gallery-id")), $.getJSON(t, {
-                      format: "json"
-                  }).done(function(e) {
-                      $(this).lightGallery({
-                          hash: !1,
-                          share: !1,
-                          dynamic: !0,
-                          dynamicEl: e,
-                          download: !1,
-                          backdropDuration: 500
-                      })
-                  }).fail(function(e, t, n) {
-                      alert("Nastala chyba při načítání galerie. Prosím zkuste to znovu."), console.error("getJSON failed, status: " + t + ", error: " + n), console.error(e)
-                  }).always(function() {
-                      n = !1
-                  }), !1
-                }
-              });
-            
-            
-             $('.partner-rotation').slick({
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: false,
-              autoplay: true,
-              autoplaySpeed: 5000,
-            });
-      
-           $("html").removeClass("no-js").addClass("js");
-      
-              });
+<footer>
+  <div class="container line">
+    <a href="#" class="footer__logo">
+        <img src="images/logo.webp" alt="">
+    </a>
+      <div class="row">
+          <h2 class="footer-left">© 2024 Všechna práva vyhrazena, USK Praha - atletika, <a href="https://esportsmedia.cz/" target="_blank">eSportsmedia.cz</a></h2><h2 class="footer-right"><a href="zobraz.asp?t=informace-o-autorskych-pravech">Informace o autorských právech</a></h2>
+      </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/lightgallery-all.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      var n = !1;
+      $("a[data-gallery]").click(function() {
+      if (!n) {
+          n = !0;
+          var e = $(this).data("gallery"),
+              t = "inc/gallery_ajax.asp?mode=" + e;
+          return 1 != e && 2 != e || (t += "&id=" + $(this).data("gallery-id")), $.getJSON(t, {
+              format: "json"
+          }).done(function(e) {
+              $(this).lightGallery({
+                  hash: !1,
+                  share: !1,
+                  dynamic: !0,
+                  dynamicEl: e,
+                  download: !1,
+                  backdropDuration: 500
+              })
+          }).fail(function(e, t, n) {
+              alert("Nastala chyba při načítání galerie. Prosím zkuste to znovu."), console.error("getJSON failed, status: " + t + ", error: " + n), console.error(e)
+          }).always(function() {
+              n = !1
+          }), !1
+        }
+      });
+    
+    
+     $('.partner-rotation').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
 
-      $('.article-text table').wrap('<div class="table-responsive"></div>');
+   $("html").removeClass("no-js").addClass("js");
 
-            </script>
-            
-      </footer>
+      });
+
+$('.article-text table').wrap('<div class="table-responsive"></div>');
+
+    </script>
+    
+</footer>
   </body>
 </html>
