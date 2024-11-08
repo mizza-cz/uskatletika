@@ -64,7 +64,7 @@ a.nav-link {
     .links,
     .clanky,
     .partneri {
-        max-width: 1420px;
+        max-width: 80%;
     }
     a.nav-link {
       font-size: 18px;
@@ -86,8 +86,8 @@ a.nav-link {
     }
 
     .topstory {
-        padding-left: 30px;
-        padding-right: 27px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
@@ -115,10 +115,12 @@ a.nav-link {
     border-radius: 6px;
 }
 .container-archiv {
-    margin-top: 5%;
     max-width: 80%;
     border-radius: 6px;
     overflow: hidden;
+    margin-top: 110px;
+    
+
 }
 .container-archiv .main{
     padding-bottom: 24px;
@@ -1378,27 +1380,22 @@ td {
 }
 
 @media screen and (max-width: 1075px) {
-    .container-archiv {
-        margin-top: 10%;
+    .container-archiv{
+        max-width: 100%;
+       padding: 0 16px;
     }
 }
 
 @media screen and (max-width: 950px) {
-    .container-archiv {
-        margin-top: 15%;
-    }
+    
 }
 
 @media screen and (max-width: 650px) {
-    .container-archiv {
-        margin-top: 20%;
-    }
+    
 }
 
 @media screen and (max-width: 400px) {
-    .container-archiv {
-        margin-top: 20%;
-    }
+    
 
     #archiv table {
         margin-bottom: 15px;
@@ -1406,9 +1403,7 @@ td {
 }
 
 @media screen and (max-width: 290px) {
-    .container-archiv {
-        margin-top: 25%;
-    }
+    
 }
 .partner-velky {
     width: 100%;
@@ -1745,6 +1740,15 @@ td {
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (max-width: 765px){
+    .date-selector{
+        flex-direction: column;
+        margin-left: 0;
+    } 
+    .selector-month, .selector-category{
+        margin-left: 0;
+    }
+}
 
 select {
     margin-left: 5px;
@@ -1836,5 +1840,43 @@ iframe{max-width: 100% !important;}
     }
     .footer-left{
        padding-bottom: 16px;
+    }
+}
+.partneri-section{
+    background: #fff;
+    border-radius: 6px;
+}
+.container-partners{
+    max-width: 80%;
+    margin: 40px auto;
+    
+    
+}
+@media(max-width: 640px){
+    .container-partners{
+        max-width: 100%;
+        margin: 32px 16px;
+    }
+}
+.main-article{
+    padding: 0 !important;
+    border-radius: 6px;
+}
+.article-wrapper{
+    padding: 0 20px;
+}
+.main-article .article-photo{
+    aspect-ratio: 900/600;
+    width: 100%;
+    
+}
+.main-article .article-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+@media(max-width: 1200px){
+    .main-article .article-photo{
+        margin: 0;
     }
 }
