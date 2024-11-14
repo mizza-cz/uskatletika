@@ -1905,3 +1905,51 @@ iframe {
     margin: 0;
   }
 }
+
+.pagination {
+  margin-left: -2px;
+  margin-right: -2px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  justify-content: center;
+}
+.pagination li {
+  padding: 0 2px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination li:last-child a {
+  padding: 0;
+}
+
+.pagination a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 2px 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-item.active .page-link {
+  background-color: #ebc021;
+  border-color: #ebc021;
+  color: #1e2021;
+}
+
+.page-link {
+  color: #1e2021;
+  border-radius: 4px !important;
+  border-color: #ebc021;
+}
+
+.page-link:hover {
+  text-decoration: underline;
+  color: #1e2021;
+  border-color: #ebc021;
+}
