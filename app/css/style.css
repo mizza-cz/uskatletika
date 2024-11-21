@@ -1953,3 +1953,103 @@ iframe {
   color: #1e2021;
   border-color: #ebc021;
 }
+
+.links__inner {
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding: 0;
+}
+.links__item {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+
+  position: relative;
+}
+.links__inner li {
+  padding: 0 8px;
+  list-style: none;
+  max-width: 20%;
+  flex: 0 0 20%;
+}
+.links__img {
+  width: 100%;
+  aspect-ratio: 292/200;
+}
+.links__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.links__info {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 0;
+  transition: all 0.2s;
+}
+.links__info svg {
+  width: 64px;
+  height: 64px;
+  transition: all 0.2s;
+  fill: #253b48;
+}
+.links__info span {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  color: #253b48;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.links__item:hover .links__info {
+  background: transparent;
+}
+.links__item:hover .links__info span {
+  color: #fff;
+}
+.links__item:hover .links__info svg {
+  fill: #fff;
+}
+
+@media (max-width: 1200px) {
+  .links__info svg {
+    width: 40px;
+    height: 40px;
+  }
+  .links__info span {
+    font-size: 12px;
+  }
+  .links__info {
+    gap: 16px;
+  }
+}
+@media (max-width: 990px) {
+  .links__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 0;
+  }
+  .links__inner li {
+    max-width: 33.333%;
+    flex: 0 0 33.333%;
+  }
+}
+@media (max-width: 540px) {
+  .links__inner li {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
