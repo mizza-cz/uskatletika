@@ -1983,6 +1983,7 @@ iframe {
   height: 100%;
   object-fit: cover;
   display: block;
+  object-position: center;
 }
 
 .links__info {
