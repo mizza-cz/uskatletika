@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
   font-family: itc-avant-garde-gothic-pro, sans-serif;
   background-size: contain;
-  background-color: #e66414;
+  background-color: #FF6A13;
 }
 
 .menu {
@@ -1083,7 +1083,7 @@ footer a {
 
 @media screen and (max-width: 989px) {
   .navbar {
-    background: #e66414;
+    background: #FF6A13;
     width: 100%;
     text-align: center;
   }
