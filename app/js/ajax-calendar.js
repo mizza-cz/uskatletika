@@ -122,7 +122,6 @@ function displayEvents(data) {
       event.time
     }">${formatDate(event.date)}, ${event.time}</time>
                     <h3 class="mb-2">${event.name}</h3>
-                    <p>${event.text}</p>
                 </a>
             </li>
         `;
